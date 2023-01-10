@@ -1,7 +1,12 @@
 import chalk from 'chalk';
 import randomColor from 'randomcolor'; // import the script
 
-const color = randomColor();
+const hue = process.argv[2];
+const luminosity = process.argv[3];
+const color = randomColor({
+  luminosity,
+  hue,
+});
 
 function logWithColor(value) {
   console.log(chalk.hex(color)(value));
