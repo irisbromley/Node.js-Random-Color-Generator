@@ -1,0 +1,12 @@
+{
+  "name": "Node.js-Random-Color-Generator",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "repository": "https://github.com/irisbromley/Node.js-Random-Color-Generator",
+  "author": "Iris Bromley <iris.j.bromley@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@upleveled/eslint-config-upleveled": "^3.6.2"
+  }
+}
