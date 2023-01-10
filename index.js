@@ -1,8 +1,16 @@
 import chalk from 'chalk';
 import randomColor from 'randomcolor'; // import the script
+import readline from 'readline-sync';
 
-const hue = process.argv[2];
-const luminosity = process.argv[3];
+let hue = process.argv[2];
+let luminosity = process.argv[2];
+
+if (process.argv[2] === 'ask') {
+  hue = readline.question('What color would you like?');
+  luminosity = readline.question('What luminosity would you like?');
+}
+
+// const luminosity = process.argv[3];
 const color = randomColor({
   luminosity,
   hue,
@@ -27,3 +35,14 @@ for (let i = 0; i < 3; i++) {
 }
 
 logWithColor(color);
+
+// This is what I want to happen:
+// if (node index.js){
+// random color
+// }else if(node index.js hue){
+//   hue
+// }else if (node index.js hue luminosity){
+//   hue lumisity
+// }else (node index.js ask){
+//   answer
+// }
