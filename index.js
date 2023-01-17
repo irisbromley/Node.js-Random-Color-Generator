@@ -33,16 +33,3 @@ logWithColor('#'.repeat(5) + ' '.repeat(21) + '#'.repeat(5));
 for (let i = 0; i < 3; i++) {
   logWithColor('#'.repeat(31));
 }
-
-logWithColor(color);
-
-// This is what I want to happen:
-// if (node index.js){
-// random color
-// }else if(node index.js hue){
-//   hue
-// }else if (node index.js hue luminosity){
-//   hue lumisity
-// }else (node index.js ask){
-//   answer
-// }
